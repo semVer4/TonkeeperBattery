@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #003145;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*header*/
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40%;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 200px;
+    position: relative;
+    top: -20%;
+}
+
+/*start-menu*/
+#start-menu {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 500px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/*desc-battery*/
+#desc-battery {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
