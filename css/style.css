@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #003145;
 }
 
 .main {
@@ -20,10 +19,12 @@ body {
     width: 100vw;
   }
   section:nth-child(odd) {
-    background-color: #2cafe2;
+    background: linear-gradient(to left, #124358, rgb(30, 29, 29));
+    box-shadow: 3px 3px 150px #0C5155;
   }
   section:nth-child(even) {
-    background-color: rgb(12, 69, 118);
+    background: linear-gradient(to left, #124358, rgb(30, 29, 29));
+    box-shadow: 3px 3px 150px #75797F;
   }
 
 .container {
@@ -38,12 +39,12 @@ header {
     font-family: "Oswald", sans-serif;
 }
 
-.logo {
+/* .logo {
     display: flex;
     justify-content: center;
     position: relative;
     top: 11%;
-}
+} */
 
 .header-buttons {
     display: flex;
@@ -63,6 +64,7 @@ header {
 /*start-menu*/
 #start-menu {
     height: 100vh;
+    background: linear-gradient(to top, #124358, rgb(30, 29, 29));
 }
 
 /* .start-text h1 {

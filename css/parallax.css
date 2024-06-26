@@ -19,6 +19,7 @@ body {
 }
 
 .logo {
+    opacity: 0.8;
 	--logo-size: calc(var(--index) * 7.8);
 	width: var(--logo-size);
 	height: var(--logo-size);
@@ -27,6 +28,7 @@ body {
 	left: calc(51% - calc(var(--logo-size) / 2));
 	top: calc(var(--index) * 2.8);
 	z-index: 1;
+	text-align: center;
 }
 .layers {
 	perspective: 1000px;
