@@ -1,9 +1,30 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #003145;
 }
+
+.main {
+  height: 90vh;
+  width: 400vw;
+  display: flex;
+}
+
+.main section {
+    height: 100%;
+    width: 100vw;
+  }
+  section:nth-child(odd) {
+    background-color: #2cafe2;
+  }
+  section:nth-child(even) {
+    background-color: rgb(12, 69, 118);
+  }
 
 .container {
     max-width: 1200px;
@@ -14,13 +35,14 @@ body {
 header {
     display: flex;
     justify-content: center;
+    font-family: "Oswald", sans-serif;
 }
 
 .logo {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 40%;
+    top: 11%;
 }
 
 .header-buttons {
@@ -30,28 +52,64 @@ header {
     top: -20%;
 }
 
+.header-buttons a {
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
 /*start-menu*/
 #start-menu {
-    height: 100vh;
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
+    font-family: "Oswald", sans-serif;
 }
 
 .start-text h1 {
-    font-size: 50px;
+    font-size: 80px;
     font-weight: bold;
     text-transform: uppercase;
-    max-width: 500px;
+    max-width: 950px;
     text-align: center;
     color: #fff;
+    position: relative;
+    bottom: 80px;
 }
 
+.start-icon {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    animation: moveUpDown 2s ease infinite;
+    top: 150px;
+}
+
+@keyframes moveUpDown {
+    0%, 100% { top: 0; }
+    50% { top: 30px; }
+}
 
 /*desc-battery*/
 #desc-battery {
-    height: 100vh;
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
+}
+
+/*demo-battery*/
+#demo-battery {
+  height: 100vh;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
 }

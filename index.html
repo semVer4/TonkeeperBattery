@@ -3,61 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>TonkeeperBattery</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="https://tonkeeper.com" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="97" height="96" fill="none" viewBox="0 0 97 96">
-                        <path fill="#45AEF5" d="M48.5 45.333 91.167 26 48.5 93.333z" opacity="0.75"></path>
-                        <path fill="#45AEF5" d="M48.5 45.333 5.833 26 48.5 93.333z" opacity="0.5"></path>
-                        <path fill="#45AEF5" d="M48.5 45.333 5.833 26 48.5 6.667 91.167 26z"></path>
-                    </svg>
-                </a>
-            </div>
-            <div class="header-buttons">
-                <a href="#" class="btn-left">description</a>
-                <a href="#" class="btn-right">demonstration</a>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section id="start-menu">
+    <div class="site-container">
+        <!-- <header>
             <div class="container">
-                <div class="start-text">
-                    <h1>with tonkeeper battery it became easier</h1>
+                <div class="logo">
+                    <a href="https://tonkeeper.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="89" fill="none" viewBox="0 0 97 96">
+                            <path fill="#45AEF5" d="M48.5 45.333 91.167 26 48.5 93.333z" opacity="0.75"></path>
+                            <path fill="#45AEF5" d="M48.5 45.333 5.833 26 48.5 93.333z" opacity="0.5"></path>
+                            <path fill="#45AEF5" d="M48.5 45.333 5.833 26 48.5 6.667 91.167 26z"></path>
+                        </svg>
+                    </a>
                 </div>
-
-                <div class="start-icon"></div>
-            </div>
-        </section>
-
-        <section id="desc-battery">
-            <div class="container">
-                <img src="#">
-                <div class="desc-img">
-                    <p>text description</p>
-                    <p>text description</p>
-                    <p>text description</p>
-                    <p>text description</p>
+                <div class="header-buttons">
+                    <a href="#" class="btn-left">desc</a>
+                    <a href="#" class="btn-right">demo</a>
                 </div>
             </div>
-        </section>
-
-        <section id="demo-battery"></section>
-
-        <footer>
-            <div class="container">
-                <div class="footer-block">
-                    <a href="https://tonkeeper.com/" target="_blank">Tonkeeper ❤️️</a>
-                    <a href="https://t.me/semVer4" target="_blank">dev by @semVer4</a>
+        </header> -->
+    
+        <main class="main">
+            <section id="start-menu">
+                <div class="container">
+                    <div class="start-text">
+                        <h1>with tonkeeper battery it became easier</h1>
+                    </div>
+    
+                    <div class="start-icon">
+                        <a href="#demo-battery"><img src="icons/scroll-down.png" width="50"></a>
+                    </div>
                 </div>
-            </div>
-        </footer>
-    </main>
+            </section>
+    
+            <section id="desc-battery">
+                <div class="container">
+                    <div class="desc-img">
+                        <p>text description</p>
+                        <p>text description</p>
+                        <p>text description</p>
+                        <p>text description</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="demo-battery">
+                <div class="container">
+                    <div class="text">
+                        <h1>HELLO</h1>
+                    </div>
+                </div>
+            </section>
+    
+            <footer id="footer">
+                <div class="container">
+                    <div class="footer-block">
+                        <a href="https://tonkeeper.com/" target="_blank">Tonkeeper ❤️️</a>
+                        <a href="https://t.me/semVer4" target="_blank">dev by @semVer4</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
