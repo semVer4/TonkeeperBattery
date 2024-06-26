@@ -62,14 +62,10 @@ header {
 
 /*start-menu*/
 #start-menu {
-    display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    font-family: "Oswald", sans-serif;
 }
 
-.start-text h1 {
+/* .start-text h1 {
     font-size: 80px;
     font-weight: bold;
     text-transform: uppercase;
@@ -78,7 +74,7 @@ header {
     color: #fff;
     position: relative;
     bottom: 80px;
-}
+} */
 
 .start-icon {
     display: flex;

@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/parallax.css">
     <title>TonkeeperBattery</title>
 </head>
 <body>
@@ -30,15 +31,24 @@
         </header> -->
     
         <main class="main">
-            <section id="start-menu">
-                <div class="container">
-                    <div class="start-text">
-                        <h1>with tonkeeper battery it became easier</h1>
+            <div class="logo" style="background-image: url(img/logo.svg);"></div>
+            <section class="layers" id="start-menu">
+                <div class="layers__container">
+                    <div class="layers__item layer-1" style="background-image: url(img/layer-1.jpg);"></div>
+                    <div class="layers__item layer-2" style="background-image: url(img/layer-2.png);"></div>
+
+                    <div class="layers__item layer-3">
+                        <div class="hero-content">
+                            <h1>Natural Forest <span>HTML / CSS</span></h1>
+                            <div class="hero-content__p">Creating a beautiful 3D website with a ‘lens effect’</div>
+                            <!-- <div class="start-icon">
+                                <img src="icons/scroll-down.png" width="50">
+                            </div> -->
+                        </div>
                     </div>
-    
-                    <div class="start-icon">
-                        <a href="#demo-battery"><img src="icons/scroll-down.png" width="50"></a>
-                    </div>
+
+                    <div class="layers__item layer-5" style="background-image: url(img/layer-5.png);"></div>
+                    <div class="layers__item layer-6" style="background-image: url(img/layer-6.png);"></div>
                 </div>
             </section>
     
@@ -75,5 +85,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/parallax.js"></script>
 </body>
 </html>
