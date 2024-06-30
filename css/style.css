@@ -181,8 +181,10 @@ header {
   justify-content: space-around;
 }
 
-.screen-img img {
-  width: calc(var(--index) * 12)
+.screen-img video {
+  border-radius: 10px;
+  border: 3px solid black;
+  width: calc(var(--index) * 10);
 }
 
 .screen-text h1 {
