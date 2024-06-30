@@ -18,26 +18,12 @@ body {
 	font-family: kamerik-3d;
 }
 
-.logo {
-    opacity: 0.8;
-	--logo-size: calc(var(--index) * 7.8);
-	width: var(--logo-size);
-	height: var(--logo-size);
-	background-repeat: no-repeat;
-	position: absolute;
-	left: calc(51% - calc(var(--logo-size) / 2));
-	top: calc(var(--index) * 2.8);
-	z-index: 1;
-	text-align: center;
-}
 .layers {
 	perspective: 1000px;
 	overflow: hidden;
 }
 .layers__container {
-
 	height: 100vh;
-	min-height: 500px;
 	transform-style: preserve-3d;
 	transform: rotateX(var(--move-y)) rotateY(var(--move-x));
 	will-change: transform;
@@ -45,7 +31,7 @@ body {
 }
 .layers__item {
 	position: absolute;
-	inset: -5vw;
+	inset: 0vw;
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -88,6 +74,6 @@ body {
 	font-size: calc(var(--index) * .73);
 	line-height: 3;
 }
-.layer-4, .layer-5, .layer-6 {
+.layer-6 {
 	pointer-events: none;
 }
