@@ -1,14 +1,45 @@
-const tl = gsap.timeline();
+document.addEventListener('DOMContentLoaded', () => {
+  const options = {
+    threshold: 0.1
+  };
+  
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        startTypingAnimation(entry.target);
+        observer.unobserve(entry.target); // Прекратить наблюдение за секцией
+      }
+    });
+  }, options);
 
-tl.fromTo('#desc-battery', {x: '-100%', y: '+100%'}, {y: 0})
-tl.fromTo('#demo-battery', {x: '-100%'}, {x: '-200%'})
+  document.querySelectorAll('.screen-text p').forEach(p => {
+    observer.observe(p);
+  });
 
-const main = document.querySelector('.main');
-ScrollTrigger.create({
-    animation: tl, 
-    trigger: '.site-container',
-    start: 'top top',
-    end: () => main.offsetWidth / 2,
-	scrub: true,
-    pin: true
+  function startTypingAnimation(element) {
+    const paragraphs = document.querySelectorAll('.screen-text p');
+    let currentIndex = 0;
+
+    function typeNextParagraph() {
+      if (currentIndex < paragraphs.length) {
+        const p = paragraphs[currentIndex];
+        p.classList.add('typing');
+        p.addEventListener('animationend', () => {
+          const span = p.querySelector('.new-line');
+          if (span) {
+            span.classList.add('typing');
+            span.addEventListener('animationend', () => {
+              currentIndex++;
+              typeNextParagraph();
+            }, { once: true });
+          } else {
+            currentIndex++;
+            typeNextParagraph();
+          }
+        }, { once: true });
+      }
+    }
+
+  typeNextParagraph();
+  }
 });
